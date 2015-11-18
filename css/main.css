@@ -64,3 +64,41 @@ hr {
   padding: 0;
   font-family: sans-serif;
 }
+
+
+/************************
+          MENU
+************************/
+.menu-div {
+  position: relative;
+}
+
+/* work on scaling */
+.menu-ul {
+  right: 0;
+  font-size: 1em;
+  position: absolute;
+  width: 100px;
+  padding: 12px;
+}
+
+.menu-ul li {
+  display: none;
+  color: lime;
+}
+
+.menu-ul:hover li {
+  display: block;
+  background-color: #EDEDED;
+  padding: 5px;
+}
+
+.menu-ul:hover li:hover {
+  display: block;
+  color: orange;
+
+}
+
+.menu-ul a {
+  text-decoration: none;
+}
