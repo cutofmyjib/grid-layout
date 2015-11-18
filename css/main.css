@@ -1,0 +1,17 @@
+/** {
+  border: 1px solid red;
+}*/
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  flex: 1 0 0;
+  background-color: gray;
+}
+
+section {
+  flex: 3.25 0 0;
+}
