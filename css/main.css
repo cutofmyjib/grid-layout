@@ -108,6 +108,10 @@ i {
   color: black;
 }
 
+.inline-list.section {
+  padding: 0;
+  margin: 0;
+}
 
 /************************
       FILTER MENU
@@ -122,12 +126,11 @@ i {
   font-size: 1em;
   position: absolute;
   width: 100px;
-  padding: 12px;
 }
 
 .menu-ul li {
   display: none;
-  color: lime;
+  color: gray;
 }
 
 .menu-ul:hover li {
@@ -138,8 +141,8 @@ i {
 
 .menu-ul:hover li:hover {
   display: block;
-  color: orange;
-
+  color: white;
+  background-color: gray;
 }
 
 .menu-ul a {
