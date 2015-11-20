@@ -12,7 +12,8 @@ body {
           NAV
 ************************/
 aside {
-  flex: 1 0 0;
+  /*flex: 1 0 0;*/
+  width: 25%;
   background-color: #EDEDED;
   text-align: center;
   color: gray;
@@ -35,7 +36,7 @@ aside {
           CONTENT
 ************************/
 section {
-  flex: 3.25 0 0;
+  /*flex: 3.25 0 0;*/
   display: flex;
   flex-direction: column;
   padding: 0 5px;
@@ -111,35 +112,43 @@ i {
 .inline-list.section {
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 /************************
       FILTER MENU
 ************************/
 .menu-div {
-  position: relative;
+  padding: 0 12px;
 }
 
 /* work on scaling */
-.menu-ul {
-  right: 0;
+.menu-ul-container {
   font-size: 1em;
-  position: absolute;
-  width: 100px;
+
 }
 
-.menu-ul li {
+.menu-ul {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-ul-container li {
   display: none;
+  width: 100%;
+  padding: 6px;
   color: gray;
 }
 
-.menu-ul:hover li {
+.menu-ul-container:hover li {
   display: block;
   background-color: #EDEDED;
-  padding: 5px;
 }
 
-.menu-ul:hover li:hover {
+.menu-ul-container:hover li:hover {
   display: block;
   color: white;
   background-color: gray;
